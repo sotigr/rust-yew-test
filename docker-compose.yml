@@ -1,0 +1,12 @@
+version: '3.7'
+services: 
+    
+  client:
+    container_name: yew-client
+    ports:
+      - '8000:8000' 
+    build: 
+      context: ./
+      dockerfile: ./Dockerfile  
+    volumes: 
+    - .:/client   
